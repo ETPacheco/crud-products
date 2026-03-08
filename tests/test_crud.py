@@ -1,9 +1,9 @@
 import sys
 import os
-import crud
-
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import crud
 
 
 def test_create_product():
@@ -25,4 +25,3 @@ def test_update_product():
 def test_delete_product():
     result = crud.delete_product(1)
     assert result is True
-
