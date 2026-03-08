@@ -1,10 +1,9 @@
 import sys
 import os
-
-# agregar ruta del proyecto
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 import crud
+
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 
 def test_create_product():
@@ -26,3 +25,4 @@ def test_update_product():
 def test_delete_product():
     result = crud.delete_product(1)
     assert result is True
+
