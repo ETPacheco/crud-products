@@ -1,3 +1,9 @@
+import sys
+import os
+
+# agregar ruta del proyecto
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import crud
 
 
